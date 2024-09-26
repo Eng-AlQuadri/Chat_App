@@ -1,0 +1,436 @@
+/* Start Global Rules */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+
+
+/* Start Sign Up Form */
+
+.signup-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-section form {
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid teal;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    color: teal;
+    box-shadow: 0 6px 10px #c0c0c0;
+}
+
+.signup-section form h2 {
+    text-align: center;
+}
+
+.signup-section form .field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.signup-section form .field input {
+    padding: 5px;
+    border: 1px solid teal;
+    caret-color: teal;
+    border-radius: 8px;
+    outline: none;
+}
+
+#choose-btn {
+    padding: 4px 8px;
+    color: teal;
+    background-color: white;
+    transition: 0.3s;
+    border: 1px solid teal;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#choose-btn:hover {
+    color: white;
+    background-color: teal;
+}
+
+#submit-btn {
+    padding: 6px 8px;
+    color: teal;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid teal;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#submit-btn:hover {
+    color: white;
+    background-color: teal;
+}
+
+.question {
+    text-align: center;
+}
+
+.question span {
+    padding: 6px 8px;
+    color: teal;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.question span:hover {
+    color: white;
+    background-color: teal;
+}
+
+.serrors {
+    text-align: center;
+    display: none;
+}
+
+.serrors.show {
+    display: block;
+}
+
+.serrors h3 {
+    background-color: lightcoral;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.errors {
+    text-align: center;
+    display: none;
+}
+
+.errors.show {
+    display: block;
+}
+
+.errors h3 {
+    background-color: lightcoral;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.fas.fa-eye {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* .signup-section h2 {
+    text-align: center;
+    color: teal;
+}
+
+.signup-section h2 span {
+    color: teal;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid teal;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 6px 10px;
+} */
+
+/* End Sign Up Form */
+
+
+/* Start Users */
+
+img {
+    width: 40px;
+}
+
+.users,
+.user-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+.users .container,
+.user-chat .container {
+    text-align: center;
+}
+
+.users .main-box,
+.user-chat .chat-box {
+    padding: 15px;
+    border: 2px solid teal;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px #c0c0c0;
+    width: auto;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.users .main-box .head,
+.user-chat .chat-box .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid teal;
+    padding-bottom: 10px;
+}
+
+/* .users .main-box .texts {} */
+
+.users .main-box .texts,
+.user-chat .chat-box .texts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+@media(max-width: 767px) {
+
+    .users .main-box .texts,
+    .user-chat .chat-box .texts {
+
+        width: auto;
+    }
+}
+
+.users .main-box #logout {
+    padding: 6px 8px;
+    color: teal;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid teal;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.users .main-box #logout:hover {
+    color: white;
+    background-color: teal;
+}
+
+.users .main-box .info h4,
+.user-chat .chat-box .info h4 {
+    padding: 0;
+    margin: 0;
+    color: teal;
+}
+
+.users .main-box .info h5,
+.user-chat .chat-box .info h5 {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    color: #9f9f9f;
+}
+
+.users .search-box {
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.users .search-box input {
+    padding: 5px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    width: 80%;
+    caret-color: teal;
+    outline: none;
+}
+
+.users .search-box input::placeholder {
+    transition: opacity 0.3s;
+}
+
+.users .search-box input:focus::placeholder {
+    opacity: 0;
+}
+
+.users .search-box button {
+    padding: 5px 8px;
+    border: 1px solid teal;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    color: teal;
+    transition: 0.3s;
+}
+
+.users .search-box button:hover {
+    color: white;
+    background-color: teal;
+}
+
+.users .body {
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid teal;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.body ul li {
+    width: 12px;
+    height: 12px;
+    background-color: teal;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+/* End Users */
+
+/* Start User Chat */
+
+.user-chat .chat-box {
+    padding: 0 !important;
+}
+
+.user-chat .chat-box .head {
+    border-bottom: none !important;
+    padding: 10px;
+}
+
+.user-chat .body {
+    height: 400px;
+    background-color: #d9d8d8;
+    overflow: auto;
+}
+
+.user-chat .send {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 90%;
+}
+
+.user-chat .send input {
+    padding: 7px;
+    caret-color: teal;
+    width: 80%;
+    border: 1px solid teal;
+    outline: none;
+    border-radius: 8px;
+}
+
+.user-chat .send button {
+    padding: 7px 4px;
+    color: teal;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid teal;
+    border-radius: 8px;
+    background-color: white;
+    width: 12%;
+}
+
+.user-chat .send button:hover {
+    color: white;
+    background-color: teal;
+}
+
+.user-chat .chat-box .head button {
+    padding: 8px;
+    color: teal;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid teal;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.user-chat .chat-box .head button:hover {
+    color: white;
+    background-color: teal;
+}
+
+.user-chat .chat-box .body {
+    padding-top: 10px;
+}
+
+.user-chat .chat-box .body .outcome {
+    max-width: 70%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid teal;
+    padding: 8px;
+    background-color: rgb(125, 124, 124);
+    color: white;
+    border-radius: 15px 15px 15px 0;
+}
+
+.user-chat .chat-box .body .income {
+    max-width: 70%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px solid teal;
+    padding: 8px;
+    background-color: white;
+    color: teal;
+    border-radius: 15px 15px 0 15px;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* End User Chat */
